@@ -6,7 +6,7 @@
                 <div class="column one">
                     <div class="top_bar_left clearfix">
                         <div class="logo">
-                            <a id="logo" href="index-school2.html" title="BeSchool 2 - BeTheme" data-height="60" data-padding="15"><img class="logo-main scale-with-grid" src="images/school2.png" data-retina="images/retina-school2.png" data-height="52" alt="school2"><img class="logo-sticky scale-with-grid" src="images/school2.png" data-retina="images/retina-school2.png" data-height="52" alt="school2"><img class="logo-mobile scale-with-grid" src="images/school2.png" data-retina="images/retina-school2.png" data-height="52" alt="school2"><img class="logo-mobile-sticky scale-with-grid" src="images/school2.png" data-retina="images/retina-school2.png" data-height="52" alt="school2"></a>
+                            <a id="logo" href="/" title="BeSchool 2 - BeTheme" data-height="60" data-padding="15"><img class="logo-main scale-with-grid" src="images/logo.jpeg" data-retina="images/logo.jpeg" data-height="52" alt="Kiddies Country"><img class="logo-sticky scale-with-grid" src="images/logo.jpeg" data-retina="images/logo.jpeg" data-height="52" alt="school2"><img class="logo-mobile scale-with-grid" src="images/logo.jpeg" data-retina="images/logo.jpeg" data-height="52" alt="school2"><img class="logo-mobile-sticky scale-with-grid" src="images/school2.png" data-retina="images/retina-school2.png" data-height="52" alt="school2"></a>
                         </div>
                         <div class="menu_wrapper">
                             <nav id="menu">
