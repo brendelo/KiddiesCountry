@@ -81,7 +81,9 @@
                 </div>
             @endif
 
+@extends('partials.admintemplate')
 
+@section('content')
             <div class="content">
 
 
@@ -133,6 +135,9 @@
 
 
             </div>
+@endsection
+
+
         </div>
     </body>
 </html>
