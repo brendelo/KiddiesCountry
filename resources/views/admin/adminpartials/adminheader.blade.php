@@ -5,36 +5,36 @@
     <meta name="description" content="Poco admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Poco admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="css/admin_style/assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="css/admin_style/assets/images/favicon.png" type="image/x-icon">
     <title>Kiddies Country - Admin Portal</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/fontawesome.css">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/icofont.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/icofont.css">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/themify.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/themify.css">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/flag-icon.css">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/feather-icon.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/animate.css">
     <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/chartist.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/date-picker.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/prism.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/material-design-icon.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/pe7-icon.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/chartist.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/date-picker.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/prism.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/material-design-icon.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/pe7-icon.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/bootstrap.css">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../assets/css/light-1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/style.css">
+    <link id="color" rel="stylesheet" href="css/admin_style/assets/css/light-1.css" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/admin_style/assets/css/responsive.css">
 
     <style>
 
@@ -96,7 +96,7 @@
     <div class="page-main-header">
         <div class="main-header-right">
             <div class="main-header-left text-center">
-                <div class="logo-wrapper"><a href="index.html"><img src="../assets/images/logo/logo.jpeg" class="w-100" height="100px" alt=""></a></div>
+                <div class="logo-wrapper"><a href="index.html"><img src="css/admin_style/assets/images/logo/logo.jpeg" class="w-100" height="100px" alt=""></a></div>
             </div>
             <div class="mobile-sidebar">
                 <div class="media-body text-right switch-sm">
@@ -120,7 +120,7 @@
                         </form>
                     </li>
                     <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
-                    <li class="onhover-dropdown"><img class="img-fluid img-shadow-warning" src="../assets/images/dashboard/bookmark.png" alt="">
+                    <li class="onhover-dropdown"><img class="img-fluid img-shadow-warning" src="css/admin_style/assets/images/dashboard/bookmark.png" alt="">
                         <div class="onhover-show-div bookmark-flip">
                             <div class="flip-card">
                                 <div class="flip-card-inner">
@@ -160,7 +160,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="onhover-dropdown"><img class="img-fluid img-shadow-secondary" src="../assets/images/dashboard/like.png" alt="">
+                    <li class="onhover-dropdown"><img class="img-fluid img-shadow-secondary" src="css/admin_style/assets/images/dashboard/like.png" alt="">
                         <ul class="onhover-show-div droplet-dropdown">
                             <li class="gradient-primary text-center">
                                 <h5 class="f-w-700">Grid Dashboard</h5><span>Easy Grid inside dropdown</span>
@@ -180,7 +180,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="onhover-dropdown"><img class="img-fluid img-shadow-warning" src="../assets/images/dashboard/notification.png" alt="">
+                    <li class="onhover-dropdown"><img class="img-fluid img-shadow-warning" src="css/admin_style/assets/images/dashboard/notification.png" alt="">
                         <ul class="onhover-show-div notification-dropdown">
                             <li class="gradient-primary">
                                 <h5 class="f-w-700">Notifications</h5><span>You have 6 unread messages</span>
@@ -206,8 +206,8 @@
                             <li class="bg-light txt-dark"><a href="#">All </a> notification</li>
                         </ul>
                     </li>
-                    <li><a class="right_side_toggle" href="#"><img class="img-fluid img-shadow-success" src="../assets/images/dashboard/chat.png" alt=""></a></li>
-                    <li class="onhover-dropdown"> <span class="media user-header"><img class="img-fluid" src="../assets/images/dashboard/user.png" alt=""></span>
+                    <li><a class="right_side_toggle" href="#"><img class="img-fluid img-shadow-success" src="css/admin_style/assets/images/dashboard/chat.png" alt=""></a></li>
+                    <li class="onhover-dropdown"> <span class="media user-header"><img class="img-fluid" src="css/admin_style/assets/images/dashboard/user.png" alt=""></span>
                         <ul class="onhover-show-div profile-dropdown">
                             <li class="gradient-primary">
                                 <h5 class="f-w-600 mb-0">Elana Saint</h5><span>Web Designer</span>
@@ -225,7 +225,7 @@
                 <div class="ProfileCard u-cf">
                     <div class="ProfileCard-avatar"><i class="pe-7s-home"></i></div>
                     <div class="ProfileCard-details">
-                        <div class="ProfileCard-realName">{{name}}</div>
+                        <div class="ProfileCard-realName">Kiddies</div>
                     </div>
                 </div>
             </script>

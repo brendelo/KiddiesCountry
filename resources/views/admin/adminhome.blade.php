@@ -1,5 +1,5 @@
 
-@extends('partials.template')
+@extends('admin.adminpartials.template')
 
 @section('content')
     <div class="content">
