@@ -81,7 +81,7 @@
                 </div>
             @endif
 
-@extends('partials.admintemplate')
+@extends('partials.template')
 
 @section('content')
             <div class="content">
