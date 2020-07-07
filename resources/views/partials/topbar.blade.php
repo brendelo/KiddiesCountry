@@ -27,6 +27,7 @@
                                     <li>
                                         <a href="/contact"><span>Contact us</span></a>
                                     </li>
+                                    
                                 </ul>
                             </nav>
                             <a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -34,7 +35,7 @@
                     </div>
                     <div class="top_bar_right">
                         <div class="top_bar_right_wrapper">
-                            <a href="http://bit.ly/1M6lijQ" class="action_button" target="_blank">Buy now</a>
+                            <a href="/admin" class="action_button" target="_blank">Admin Login</a>
                         </div>
                     </div>
                 </div>
