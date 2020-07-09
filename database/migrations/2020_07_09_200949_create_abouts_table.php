@@ -15,7 +15,26 @@ class CreateAboutsTable extends Migration
     {
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
+
+            $table->unsignedBigInteger('user_id');
+            $table->string('aboutheader1');
+            $table->text('aboutintro1');
+            $table->string('aboutheader2');
+            $table->text('aboutintro2');
+            $table->string('aboutmainimage');
+            $table->string('aboutsideimage');
+            $table->string('aboutheader3');
+            $table->text('aboutintro3');
+            $table->string('aboutheader4');
+            $table->text('aboutintro4');
+            $table->string('aboutheader5');
+            $table->text('aboutintro5');
+
+            $table->string('aboutsideimage2');
+
             $table->timestamps();
+
+            $table->index('user_id');
         });
     }
 
