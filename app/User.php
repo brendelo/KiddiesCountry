@@ -37,6 +37,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function index()
+    {
+        return $this->hasOne(index::class);
+    }
+
     public function home()
     {
         return $this->hasOne(home::class);

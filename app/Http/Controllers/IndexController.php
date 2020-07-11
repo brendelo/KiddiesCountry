@@ -30,6 +30,8 @@ class IndexController extends Controller
 
         ]);
 
+        auth()->user()->
+
 //        \App\home::create([
 //
 //        ]);
