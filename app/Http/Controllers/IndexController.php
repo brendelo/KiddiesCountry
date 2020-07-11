@@ -21,7 +21,7 @@ class IndexController extends Controller
 
         $data = \request()->validate([
             'header1' => ['required'],
-            'intro1' => [],
+            'intro' => [],
             "header2" => [],
             "intro2" => [],
             "summary" => [],
@@ -30,7 +30,7 @@ class IndexController extends Controller
 
         ]);
 
-        auth()->user()->
+        auth()->user()->index()->create($data);
 
 //        \App\home::create([
 //
