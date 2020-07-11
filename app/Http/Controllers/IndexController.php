@@ -16,8 +16,23 @@ class IndexController extends Controller
         return view('index', compact('user'));
     }
 
-    public function store()
+    public function update()
     {
+
+        $data = \request()->validate([
+            'header1' => ['required'],
+            'intro1' => [],
+            "header2" => [],
+            "intro2" => [],
+            "summary" => [],
+            'image1' => ['image'],
+            'image2' => ['image'],
+
+        ]);
+
+//        \App\home::create([
+//
+//        ]);
         dd(\request()->all());
 
     }

@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class home extends Model
 {
+    protected $guarded = [];
     public function user()
     {
-        return $this->hasOne(about::class);
+        return $this->belongsTo(User::class);
     }
 
 }

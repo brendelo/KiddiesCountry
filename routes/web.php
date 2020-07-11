@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/adminhome', 'AdminController@home');
 Route::get('/admin', 'AdminController@admin');
 Route::get('/indexform', 'AdminController@showindexform');
+Route::post('/indexform/update', 'AdminController@createindexform');
 
 
 
@@ -23,6 +24,7 @@ Route::get('/indexform', 'AdminController@showindexform');
 
 Route::get('/', 'IndexController@index');
 Route::get('/store', 'IndexController@store');
+Route::post('/indexform/update', 'IndexController@update');
 
 
 
