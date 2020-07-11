@@ -6,7 +6,7 @@
                     <!--img(src='../assets/images/menu/home.png' alt='')--><i class="pe-7s-home"></i><span>General    </span></a>
                 <ul class="iconbar-mainmenu custom-scrollbar">
                     <li class="iconbar-header">Dashboard</li>
-                    <li><a href="index.html">Default</a></li>
+                    <li><a href="indexform">Index</a></li>
                     <li><a href="dashboard-crypto.html">About</a></li>
                     <li><a href="dashboard-ecommerce.html">Ecommerce</a></li>
                     <li class="iconbar-header sub-header">Widgets</li>

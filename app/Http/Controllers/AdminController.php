@@ -13,4 +13,8 @@ class AdminController extends Controller
     public function home(){
         return view('admin.adminhome');
     }
+
+    public function showindexform(){
+        return view('admin.admin_forms.indexform');
+    }
 }
