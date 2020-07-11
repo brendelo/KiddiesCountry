@@ -24,8 +24,9 @@
                                         <div class="form-group row">
                                             <label for="header1" class="col-md-2 col-form-label text-md-right">{{ __('Header 1') }}</label>
 
+
                                             <div class="col-md-8">
-                                                <input id="header1" type="text" class="form-control @error('header1') is-invalid @enderror" name="header1" value="{{ old('header1') }}" required autocomplete="header1" autofocus>
+                                                <input id="header1" type="text" class="form-control @error('header1') is-invalid @enderror" name="header1" value="{{ old('header1') ?? $user->index->header1 }}" required autocomplete="header1" autofocus>
 
                                                 @error('header1')
                                                 <span class="invalid-feedback" role="alert">

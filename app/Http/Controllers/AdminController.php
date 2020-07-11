@@ -15,7 +15,8 @@ class AdminController extends Controller
     }
 
     public function showindexform(){
-        return view('admin.admin_forms.indexform');
+        $user = auth()->user();
+        return view('admin.admin_forms.indexform', compact('user'));
     }
 
 

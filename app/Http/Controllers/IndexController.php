@@ -4,10 +4,15 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class IndexController extends Controller
 {
 
+//    public function __construct()
+//    {
+//        $this->middleware('auth');
+//    }
 
     public function index()
     {
@@ -20,22 +25,39 @@ class IndexController extends Controller
     {
 
         $data = \request()->validate([
-            'header1' => ['required'],
+            'header1' => [],
             'intro' => [],
-            "header2" => [],
-            "intro2" => [],
-            "summary" => [],
-            'image1' => ['image'],
-            'image2' => ['image'],
+            "lessonheader" => [],
+            "lessontext" => [],
+            "lessonsummary" => [],
+            'lessonimage' => ['image'],
+            'mainimage' => ['image'],
 
         ]);
 
-        auth()->user()->index()->create($data);
 
-//        \App\home::create([
-//
-//        ]);
-        dd(\request()->all());
+        $imagePath1 = request('mainimage')->store('uploads', 'public');
+        $imagePath2 = request('lessonimage')->store('uploads', 'public');
+
+        $image1 = Image::make(public_path("storage/{$imagePath1}"))->fit(1200, 1200);
+        $image1->save();
+        $image2 = Image::make(public_path("storage/{$imagePath2}"))->fit(1200, 1200);
+        $image2->save();
+
+        auth()->user()->index()->create([
+
+            'header1' => $data['header1'],
+            'intro' => $data['intro'],
+            "lessonheader" => $data['lessonheader'],
+            "lessontext" => $data['lessontext'],
+            "lessonsummary" => $data['lessonsummary'],
+            'lessonimage' => $imagePath2,
+            'mainimage' => $imagePath1,
+
+        ]);
+
+        return redirect('indexform');
+
 
     }
 
