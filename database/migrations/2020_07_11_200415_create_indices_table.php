@@ -16,13 +16,13 @@ class CreateIndicesTable extends Migration
         Schema::create('indices', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->string('header1');
-            $table->text('intro');
-            $table->string('mainimage');
-            $table->string('lessonimage');
-            $table->string('lessonheader');
-            $table->text('lessontext');
-            $table->text('lessonsummary');
+            $table->string('header1')->nullable();
+            $table->text('intro')->nullable();
+            $table->string('mainimage')->nullable();
+            $table->string('lessonimage')->nullable();
+            $table->string('lessonheader')->nullable();
+            $table->text('lessontext')->nullable();
+            $table->text('lessonsummary')->nullable();
             $table->timestamps();
 
             $table->index('user_id');
