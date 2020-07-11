@@ -21,6 +21,10 @@ Route::get('/admin', 'AdminController@admin');
 
 
 Route::get('/', 'IndexController@index');
+Route::get('/store', 'IndexController@store');
+
+
+
 Route::get('/about', 'AboutController@index');
 Route::get('/teachers', 'TeachersController@index');
 Route::get('/classes', 'ClassesController@index');
@@ -30,6 +34,6 @@ Route::get('/contact', 'ContactController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home/{user}', 'HomeController@index')->name('home');
 
 

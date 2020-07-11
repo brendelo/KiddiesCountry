@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -21,8 +22,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index($user)
     {
-        return view('home');
+        $user = 1;
+        $user = User::findorFail($user);
+        return view('home', compact('user'));
     }
 }

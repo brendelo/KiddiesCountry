@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class ClassesController extends Controller
 {
-    public function index(){
-        return view('classes');
+
+
+    public function index()
+    {
+        $user =1;
+        $user = User::findorFail($user);
+        return view('classes', compact('user'));
     }
 }
