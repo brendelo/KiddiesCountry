@@ -70,6 +70,7 @@
                     @auth
                         <a href="{{ url('/') }}">Home</a>
                         <a href="{{ url('/') }}">Kiddies</a>
+                        <a href="{{ url('/adminhome') }}">Admin</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
