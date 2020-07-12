@@ -20,7 +20,7 @@
                                 <div class="card-body">
                                     <form action="/indexform/update" method="post" class="theme-form mega-form" enctype="multipart/form-data">
                                         @csrf
-                                        <h6>Account Information</h6>
+
                                         <div class="form-group row">
                                             <label for="header1" class="col-md-2 col-form-label text-md-right">{{ __('Header 1') }}</label>
 
