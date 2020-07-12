@@ -37,7 +37,7 @@ class IndexController extends Controller
 
         if(\request('lessonimage')){
             $imagePath2 = request('lessonimage')->store('uploads', 'public');
-            $image2 = Image::make(public_path("storage/{$imagePath2}"))->fit(1200, 1200);
+            $image2 = Image::make(public_path("storage/{$imagePath2}"))->fit(780, 1000);
             $image2->save();
 
             $imagearray1= ['lessonimage' => $imagePath2];
@@ -47,7 +47,7 @@ class IndexController extends Controller
             $imagePath1 = request('mainimage')->store('uploads', 'public');
 
 
-            $image1 = Image::make(public_path("storage/{$imagePath1}"))->fit(1200, 1200);
+            $image1 = Image::make(public_path("storage/{$imagePath1}"))->fit(1920, 660);
             $image1->save();
 
             $imagearray2 = ['mainimage' => $imagePath1];
