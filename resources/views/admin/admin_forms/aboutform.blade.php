@@ -41,7 +41,7 @@
                                             <label for="aboutintro1" class="col-md-2 col-form-label text-md-right">{{ __('About Intro') }}</label>
 
                                             <div class="col-md-8">
-                                                <textarea id="aboutintro1" type="text" class="form-control @error('aboutintro1') is-invalid @enderror" name="aboutintro1" value="{{ }}" required autocomplete="aboutintro1" autofocus> {{ old('aboutintro1') ?? $user->about->aboutintro1 ?? ''}}</textarea>
+                                                <textarea id="aboutintro1" type="text" class="form-control @error('aboutintro1') is-invalid @enderror" name="aboutintro1" value="" required autocomplete="aboutintro1" autofocus> {{ old('aboutintro1') ?? $user->about->aboutintro1 ?? ''}}</textarea>
 
                                                 @error('aboutintro1')
                                                 <span class="invalid-feedback" role="alert">
@@ -71,7 +71,7 @@
                                             <label for="aboutintro2" class="col-md-2 col-form-label text-md-right">{{ __('About Intro 2') }}</label>
 
                                             <div class="col-md-8">
-                                                <textarea id="aboutintro2" type="text" class="form-control @error('aboutintro2') is-invalid @enderror" name="aboutintro2" value="{{ }}" required autocomplete="aboutintro1" autofocus> {{old('aboutintro2') ?? $user->about->aboutintro1 ?? ''}}</textarea>
+                                                <textarea id="aboutintro2" type="text" class="form-control @error('aboutintro2') is-invalid @enderror" name="aboutintro2" value="" required autocomplete="aboutintro1" autofocus> {{old('aboutintro2') ?? $user->about->aboutintro1 ?? ''}}</textarea>
 
                                                 @error('aboutintro2')
                                                 <span class="invalid-feedback" role="alert">
