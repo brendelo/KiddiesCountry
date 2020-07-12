@@ -42,10 +42,10 @@ class User extends Authenticatable
         parent::boot();
 
         static::created(function ($user){
-            $user->index->create();
-            $user->about->create();
-            $user->classes->create();
-            $user->contact->create();
+            $user->index()->create();
+            $user->about()->create();
+            $user->classes()->create();
+            $user->contact()->create();
 
 
 
@@ -80,5 +80,10 @@ class User extends Authenticatable
     public function teachers()
     {
         return $this->hasMany(teacher::class);
+    }
+
+    public function contact()
+    {
+        return $this->hasOne(contact::class);
     }
 }

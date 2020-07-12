@@ -35,26 +35,34 @@ class IndexController extends Controller
 
         ]);
 
+        if(\request('lessonimage')){
+            $imagePath2 = request('lessonimage')->store('uploads', 'public');
+            $image2 = Image::make(public_path("storage/{$imagePath2}"))->fit(1200, 1200);
+            $image2->save();
 
-        $imagePath1 = request('mainimage')->store('uploads', 'public');
-        $imagePath2 = request('lessonimage')->store('uploads', 'public');
+            $imagearray1= ['lessonimage' => $imagePath2];
+        }
 
-        $image1 = Image::make(public_path("storage/{$imagePath1}"))->fit(1200, 1200);
-        $image1->save();
-        $image2 = Image::make(public_path("storage/{$imagePath2}"))->fit(1200, 1200);
-        $image2->save();
+        if (\request('mainimage')){
+            $imagePath1 = request('mainimage')->store('uploads', 'public');
 
-        auth()->user()->index()->create([
 
-            'header1' => $data['header1'],
-            'intro' => $data['intro'],
-            "lessonheader" => $data['lessonheader'],
-            "lessontext" => $data['lessontext'],
-            "lessonsummary" => $data['lessonsummary'],
-            'lessonimage' => $imagePath2,
-            'mainimage' => $imagePath1,
+            $image1 = Image::make(public_path("storage/{$imagePath1}"))->fit(1200, 1200);
+            $image1->save();
 
-        ]);
+            $imagearray2 = ['mainimage' => $imagePath1];
+        }
+
+        $imagearray = array_merge($imagearray1 ?? [], $imagearray2 ?? []);
+
+//        dd($imagearray);
+
+
+
+        auth()->user()->index()->update(array_merge(
+            $data,
+            $imagearray ?? []
+        ));
 
         return redirect('indexform');
 
