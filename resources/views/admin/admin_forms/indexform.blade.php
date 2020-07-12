@@ -41,7 +41,7 @@
                                             <label for="intro" class="col-md-2 col-form-label text-md-right">{{ __('Intro') }}</label>
 
                                             <div class="col-md-8">
-                                                <textarea id="intro" type="text" class="form-control @error('intro') is-invalid @enderror" name="intro" value="{{ old('intro') }}" required autocomplete="intro" autofocus> </textarea>
+                                                <textarea id="intro" type="text" class="form-control @error('intro') is-invalid @enderror" name="intro" value="{{ old('intro') ?? $user->index->intro}}" required autocomplete="intro" autofocus> {{$user->index->intro ?? ''}}</textarea>
 
                                                 @error('intro')
                                                 <span class="invalid-feedback" role="alert">
@@ -54,7 +54,9 @@
                                         <div class="form-group row">
                                             <label for="mainimage" class="col-md-2 col-form-label text-md-right">{{ __('Main Image') }}</label>
 
-                                            <div class="col-md-8">
+                                            <div class="col-md-8 d-flex">
+
+                                                <img class="w-25" src="storage/{{ $user->index->mainimage}} " alt="Main Image"/>
                                                 <input id="mainimage" type="file" class="form-control-file @error('mainimage') is-invalid @enderror" name="mainimage" value="{{ old('mainimage') }}"  autocomplete="mainimage" autofocus>
 
                                                 @error('mainimage')
@@ -77,7 +79,7 @@
                                             <label for="lessonheader" class="col-md-2 col-form-label text-md-right">{{ __('Lesson Header') }}</label>
 
                                             <div class="col-md-8">
-                                                <input id="lessonheader" type="text" class="form-control @error('lessonheader') is-invalid @enderror" name="lessonheader" value="{{ old('lessonheader') }}" required autocomplete="lessonheader" autofocus>
+                                                <input id="lessonheader" type="text" class="form-control @error('lessonheader') is-invalid @enderror" name="lessonheader" value="{{ old('lessonheader') ?? $user->index->lessonheader}}" required autocomplete="lessonheader" autofocus>
 
                                                 @error('lessonheader')
                                                 <span class="invalid-feedback" role="alert">
@@ -92,7 +94,7 @@
                                             <label for="lessontext" class="col-md-2 col-form-label text-md-right">{{ __('Lesson Text') }}</label>
 
                                             <div class="col-md-8">
-                                                <textarea id="lessontext" type="text" class="form-control @error('lessontext') is-invalid @enderror" name="lessontext" value="{{ old('lessontext') }}" required autocomplete="lessontext" autofocus> </textarea>
+                                                <textarea id="lessontext" type="text" class="form-control @error('lessontext') is-invalid @enderror" name="lessontext" value="{{ old('lessontext') ?? $user->index->lessontext}}" required autocomplete="lessontext" autofocus> {{$user->index->lessontext ?? ''}}</textarea>
 
                                                 @error('lessontext')
                                                 <span class="invalid-feedback" role="alert">
@@ -106,7 +108,7 @@
                                             <label for="lessonsummary" class="col-md-2 col-form-label text-md-right">{{ __('Lesson Summary') }}</label>
 
                                             <div class="col-md-8">
-                                                <textarea id="lessonsummary" type="text" class="form-control @error('lessonsummary') is-invalid @enderror" name="lessonsummary" value="{{ old('lessonsummary') }}" required autocomplete="lessonsummary" autofocus> </textarea>
+                                                <textarea id="lessonsummary" type="text" class="form-control @error('lessonsummary') is-invalid @enderror" name="lessonsummary" value="{{ old('lessonsummary') }}" required autocomplete="lessonsummary" autofocus> {{$user->index->lessonsummary ?? ''}}  </textarea>
 
                                                 @error('lessonsummary')
                                                 <span class="invalid-feedback" role="alert">
@@ -119,7 +121,8 @@
                                         <div class="form-group row">
                                             <label for="lessonimage" class="col-md-2 col-form-label text-md-right">{{ __('Lesson Image') }}</label>
 
-                                            <div class="col-md-8">
+                                            <div class="col-md-8 d-flex">
+                                                <img class="w-25" src="storage/{{ $user->index->lessonimage}}" alt="Lesson Image">
                                                 <input id="lessonimage" type="file" class="form-control-file @error('lessonimage') is-invalid @enderror" name="lessonimage" value="{{ old('lessonimage') }}"  autocomplete="lessonimage" autofocus>
 
                                                 @error('lessonimage')
