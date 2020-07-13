@@ -16,7 +16,9 @@ Route::get('/adminhome', 'AdminController@home');
 Route::get('/admin', 'AdminController@admin');
 Route::get('/indexform', 'AdminController@showindexform');
 Route::get('/aboutform', 'AdminController@showaboutform');
-Route::post('/indexform/update', 'AdminController@createindexform');
+Route::post('/aboutform/update', 'AboutController@update');
+//Route::post('/indexform/update', 'AdminController@createindexform');
+
 
 
 
