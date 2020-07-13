@@ -71,7 +71,7 @@
                                             <label for="aboutintro2" class="col-md-2 col-form-label text-md-right">{{ __('About Intro 2') }}</label>
 
                                             <div class="col-md-8">
-                                                <textarea id="aboutintro2" type="text" class="form-control @error('aboutintro2') is-invalid @enderror" name="aboutintro2" value="" required autocomplete="aboutintro1" autofocus> {{old('aboutintro2') ?? $user->about->aboutintro1 ?? ''}}</textarea>
+                                                <textarea id="aboutintro2" type="text" class="form-control @error('aboutintro2') is-invalid @enderror" name="aboutintro2" value="" required autocomplete="aboutintro2" autofocus> {{old('aboutintro2') ?? $user->about->aboutintro2 ?? ''}}</textarea>
 
                                                 @error('aboutintro2')
                                                 <span class="invalid-feedback" role="alert">
@@ -84,51 +84,14 @@
 
 
                                         <div class="form-group row">
-                                            <label for="mainimage" class="col-md-2 col-form-label text-md-right">{{ __('Main Image') }}</label>
+                                            <label for="aboutmainimage" class="col-md-2 col-form-label text-md-right">{{ __('Main Image') }}</label>
 
                                             <div class="col-md-8 d-flex">
 
-                                                <img class="w-25" src="storage/{{ $user->index->mainimage}} " alt="Main Image"/>
-                                                <input id="mainimage" type="file" class="form-control-file @error('mainimage') is-invalid @enderror" name="mainimage" value="{{ old('mainimage') }}"  autocomplete="mainimage" autofocus>
+                                                <img class="w-25" src="storage/{{ $user->about->aboutmainimage}} " alt="Main Image"/>
+                                                <input id="aboutmainimage" type="file" class="form-control-file @error('aboutmainimage') is-invalid @enderror" name="aboutmainimage" value="{{ old('aboutmainimage') }}"  autocomplete="aboutmainimage" autofocus>
 
-                                                @error('mainimage')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-
-
-
-                                        <div class="form-group row">
-                                            <label for="lessonheader" class="col-md-2 col-form-label text-md-right">{{ __('Lesson Header') }}</label>
-
-                                            <div class="col-md-8">
-                                                <input id="lessonheader" type="text" class="form-control @error('lessonheader') is-invalid @enderror" name="lessonheader" value="{{ old('lessonheader') ?? $user->index->lessonheader}}" required autocomplete="lessonheader" autofocus>
-
-                                                @error('lessonheader')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group row">
-                                            <label for="lessontext" class="col-md-2 col-form-label text-md-right">{{ __('Lesson Text') }}</label>
-
-                                            <div class="col-md-8">
-                                                <textarea id="lessontext" type="text" class="form-control @error('lessontext') is-invalid @enderror" name="lessontext" value="{{ old('lessontext') ?? $user->index->lessontext}}" required autocomplete="lessontext" autofocus> {{$user->index->lessontext ?? ''}}</textarea>
-
-                                                @error('lessontext')
+                                                @error('aboutmainimage')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
@@ -137,27 +100,29 @@
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="lessonsummary" class="col-md-2 col-form-label text-md-right">{{ __('Lesson Summary') }}</label>
-
-                                            <div class="col-md-8">
-                                                <textarea id="lessonsummary" type="text" class="form-control @error('lessonsummary') is-invalid @enderror" name="lessonsummary" value="{{ old('lessonsummary') }}" required autocomplete="lessonsummary" autofocus> {{$user->index->lessonsummary ?? ''}}  </textarea>
-
-                                                @error('lessonsummary')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label for="lessonimage" class="col-md-2 col-form-label text-md-right">{{ __('Lesson Image') }}</label>
+                                            <label for="aboutsideimage" class="col-md-2 col-form-label text-md-right">{{ __('Side Image') }}</label>
 
                                             <div class="col-md-8 d-flex">
-                                                <img class="w-25" src="storage/{{ $user->index->lessonimage}}" alt="Lesson Image">
-                                                <input id="lessonimage" type="file" class="form-control-file @error('lessonimage') is-invalid @enderror" name="lessonimage" value="{{ old('lessonimage') }}"  autocomplete="lessonimage" autofocus>
 
-                                                @error('lessonimage')
+                                                <img class="w-25" src="storage/{{ $user->about->aboutsideimage}} " alt="Main Image"/>
+                                                <input id="aboutsideimage" type="file" class="form-control-file @error('aboutsideimage') is-invalid @enderror" name="aboutsideimage" value="{{ old('aboutsideimage') }}"  autocomplete="aboutsideimage" autofocus>
+
+                                                @error('aboutsideimage')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="aboutheader3" class="col-md-2 col-form-label text-md-right">{{ __('About Header 3') }}</label>
+
+
+                                            <div class="col-md-8">
+                                                <input id="aboutheader3" type="text" class="form-control @error('aboutheader3') is-invalid @enderror" name="aboutheader3" value="{{ old('aboutheader3') ?? $user->about->aboutheader3 }}" autocomplete="aboutheader3" autofocus>
+
+                                                @error('aboutheader3')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
@@ -166,13 +131,96 @@
                                         </div>
 
 
+                                        <div class="form-group row">
+                                            <label for="aboutintro3" class="col-md-2 col-form-label text-md-right">{{ __('About Intro 3') }}</label>
+
+                                            <div class="col-md-8">
+                                                <textarea id="aboutintro3" type="text" class="form-control @error('aboutintro3') is-invalid @enderror" name="aboutintro3" value="" required autocomplete="aboutintro3" autofocus> {{old('aboutintro3') ?? $user->about->aboutintro3 ?? ''}}</textarea>
+
+                                                @error('aboutintro3')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+                                            </div>
+                                        </div>
 
 
+                                        <div class="form-group row">
+                                            <label for="aboutheader4" class="col-md-2 col-form-label text-md-right">{{ __('About Header 4') }}</label>
 
 
+                                            <div class="col-md-8">
+                                                <input id="aboutheader4" type="text" class="form-control @error('aboutheader4') is-invalid @enderror" name="aboutheader4" value="{{ old('aboutheader4') ?? $user->about->aboutheader4 }}" autocomplete="aboutheader4" autofocus>
+
+                                                @error('aboutheader4')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+                                            </div>
+                                        </div>
 
 
+                                        <div class="form-group row">
+                                            <label for="aboutintro4" class="col-md-2 col-form-label text-md-right">{{ __('About Intro 4') }}</label>
 
+                                            <div class="col-md-8">
+                                                <textarea id="aboutintro4" type="text" class="form-control @error('aboutintro4') is-invalid @enderror" name="aboutintro4" value="" required autocomplete="aboutintro4" autofocus> {{old('aboutintro4') ?? $user->about->aboutintro4 ?? ''}}</textarea>
+
+                                                @error('aboutintro4')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="aboutheader5" class="col-md-2 col-form-label text-md-right">{{ __('About Header 5') }}</label>
+
+
+                                            <div class="col-md-8">
+                                                <input id="aboutheader5" type="text" class="form-control @error('aboutheader5') is-invalid @enderror" name="aboutheader5" value="{{ old('aboutheader5') ?? $user->about->aboutheader5 }}" autocomplete="aboutheader5" autofocus>
+
+                                                @error('aboutheader5')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label for="aboutintro5" class="col-md-2 col-form-label text-md-right">{{ __('About Intro 5') }}</label>
+
+                                            <div class="col-md-8">
+                                                <textarea id="aboutintro5" type="text" class="form-control @error('aboutintro5') is-invalid @enderror" name="aboutintro5" value="" required autocomplete="aboutintro5" autofocus> {{old('aboutintro5') ?? $user->about->aboutintro5 ?? ''}}</textarea>
+
+                                                @error('aboutintro5')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="aboutsideimage2" class="col-md-2 col-form-label text-md-right">{{ __('Side Image 2') }}</label>
+
+                                            <div class="col-md-8 d-flex">
+
+                                                <img class="w-25" src="storage/{{ $user->about->aboutsideimage2}} " alt="Main Image"/>
+                                                <input id="aboutsideimage2" type="file" class="form-control-file @error('aboutsideimage2') is-invalid @enderror" name="aboutsideimage2" value="{{ old('aboutsideimage2') }}"  autocomplete="aboutsideimage2" autofocus>
+
+                                                @error('aboutsideimage2')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+                                            </div>
+                                        </div>
 
 
 
