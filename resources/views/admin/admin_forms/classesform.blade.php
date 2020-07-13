@@ -41,7 +41,7 @@
                                             <label for="classesintro1" class="col-md-2 col-form-label text-md-right">{{ __('Intro 1') }}</label>
 
                                             <div class="col-md-8">
-                                                <textarea id="classesintro1" type="text" class="form-control @error('classesintro1') is-invalid @enderror" name="classesintro1" value="{{ old('classesintro1') ?? $user->classes->classesintro1}}" required autocomplete="classesintro1" autofocus> {{$user->classes->intro ?? ''}}</textarea>
+                                                <textarea id="classesintro1" type="text" class="form-control @error('classesintro1') is-invalid @enderror" name="classesintro1" value="{{ old('classesintro1') ?? $user->classes->classesintro1}}" required autocomplete="classesintro1" autofocus> {{$user->classes->classesintro1 ?? ''}}</textarea>
 
                                                 @error('classesintro1')
                                                 <span class="invalid-feedback" role="alert">
