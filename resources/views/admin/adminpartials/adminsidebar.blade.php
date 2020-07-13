@@ -8,7 +8,7 @@
                     <li class="iconbar-header">Dashboard</li>
                     <li><a href="indexform">Index</a></li>
                     <li><a href="aboutform">About</a></li>
-                    <li><a href="dashboard-ecommerce.html">Ecommerce</a></li>
+                    <li><a href="classesform">Classes</a></li>
                     <li class="iconbar-header sub-header">Widgets</li>
                     <li><a href="general-widget.html">General widget</a></li>
                     <li><a href="chart-widget.html">Chart widget</a></li>
