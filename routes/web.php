@@ -18,12 +18,14 @@ Route::get('/indexform', 'AdminController@showindexform');
 Route::get('/aboutform', 'AdminController@showaboutform');
 Route::get('/classesform', 'AdminController@showclassesform');
 Route::get('/teachersform', 'AdminController@showteacherform');
+Route::get('/teacherupdateform', 'AdminController@showteacherupdateform');
 Route::post('/aboutform/update', 'AboutController@update');
 //Route::post('/indexform/update', 'AdminController@createindexform');
 
 
 
 Route::post('/teachersform/create', 'TeachersController@create');
+Route::post('/teachersform/update/{teacherid}', 'TeachersController@update');
 
 
 

@@ -10,12 +10,12 @@
                     <li><a href="indexform">Index</a></li>
                     <li><a href="aboutform">About</a></li>
                     <li><a href="classesform">Classes</a></li>
-                    <li><a href="teachersform">Teachers</a></li>
+                    <li><a href="teacherupdateform">Teachers</a></li>
                     <li><a href="contactform">Contact Us</a></li>
 
 
-                    <li class="iconbar-header sub-header">Widgets</li>
-                    <li><a href="general-widget.html">General widget</a></li>
+                    <li class="iconbar-header sub-header">CREATE</li>
+                    <li><a href="teachersform">Create Teacher</a></li>
                     <li><a href="chart-widget.html">Chart widget</a></li>
                     <li class="iconbar-header sub-header">starter-kit</li>
                     <li><a href="../starter-kit/index.html">starter-kit   </a></li>

@@ -40,4 +40,32 @@ class TeachersController extends Controller
 
         return redirect('teachersform');
     }
+
+    public function update($teacherid)
+    {
+        $data = \request()->validate([
+            'teachername' => [],
+            'teacherclass' => [],
+            'teachercourse' => [],
+            'teachersummary' => [],
+            'teacherimage' => ['image'],
+        ]);
+
+        if(\request('teacherimage')){
+            $imagepath = \request('teacherimage')->store('uploads', 'public');
+            $image = Image::make(public_path('storage/'.$imagepath))->fit(780,978);
+            $image->save();
+        }
+
+        $image_array = ['teacherimage' => $imagepath];
+
+
+
+        auth()->user()->teacher::where(['id' => $teacherid])->update(array_merge(
+            $data,
+            $image_array ?? []
+        ));
+
+        return redirect('teachersform');
+    }
 }
