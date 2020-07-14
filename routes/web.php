@@ -25,6 +25,8 @@ Route::post('/aboutform/update', 'AboutController@update');
 
 
 Route::post('/teachersform/create', 'TeachersController@create');
+Route::post('/coursesform/create', 'CoursesController@create');
+Route::get('/coursesform', 'CoursesController@index');
 Route::post('/teachersupdateform/update/{teacherid}', 'TeachersController@update');
 
 

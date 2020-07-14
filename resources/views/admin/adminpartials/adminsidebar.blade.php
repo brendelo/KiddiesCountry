@@ -16,9 +16,9 @@
 
                     <li class="iconbar-header sub-header">CREATE</li>
                     <li><a href="teachersform">Create Teacher</a></li>
-                    <li><a href="chart-widget.html">Chart widget</a></li>
+                    <li><a href="coursesform">Create Course</a></li>
                     <li class="iconbar-header sub-header">starter-kit</li>
-                    <li><a href="../starter-kit/index.html">starter-kit   </a></li>
+                    <li><a href="#">starter-kit   </a></li>
                 </ul>
             </li>
 
