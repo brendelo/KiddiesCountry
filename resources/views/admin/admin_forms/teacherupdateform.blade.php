@@ -15,12 +15,12 @@
                         <div class="col-sm-10 col-8">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>Teachers Page Information</h5>
+                                    <h5>Teachers Information Update Page</h5>
                                 </div>
 
                                 @foreach($user->teachers as $teacher )
                                 <div class="card-body">
-                                    <form action="/teachersform/update/{{$teacher->id}}" method="post" class="theme-form mega-form" enctype="multipart/form-data">
+                                    <form action="/teachersupdateform/update/{{$teacher->id}}" method="post" class="theme-form mega-form" enctype="multipart/form-data">
                                         @csrf
 
                                         <div class="form-group row">

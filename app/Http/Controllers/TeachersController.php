@@ -43,6 +43,8 @@ class TeachersController extends Controller
 
     public function update($teacherid)
     {
+
+        //dd($teacherid);
         $data = \request()->validate([
             'teachername' => [],
             'teacherclass' => [],
@@ -55,17 +57,31 @@ class TeachersController extends Controller
             $imagepath = \request('teacherimage')->store('uploads', 'public');
             $image = Image::make(public_path('storage/'.$imagepath))->fit(780,978);
             $image->save();
+
+            $image_array = ['teacherimage' => $imagepath];
         }
 
-        $image_array = ['teacherimage' => $imagepath];
 
 
+        //dd($image_array ?? '');
 
-        auth()->user()->teacher::where(['id' => $teacherid])->update(array_merge(
-            $data,
-            $image_array ?? []
-        ));
+        $newdata = array_merge($data, $image_array ?? []);
 
-        return redirect('teachersform');
+        $theteacher = auth()->user()->teachers()->findorFail($teacherid);
+
+
+        $theteacher->teachername = $newdata['teachername'];
+        $theteacher->teachercourse = $newdata['teachercourse'];
+        $theteacher->teacherclass = $newdata['teacherclass'];
+        $theteacher->teachersummary = $newdata['teachersummary'];
+        if (\request('teacherimage')){
+        $theteacher->teacherimage= $newdata['teacherimage'] ;}
+
+        //dd($theteacher);
+        $theteacher->save();
+
+        //dd($theteacher);
+
+        return redirect('teacherupdateform');
     }
 }
