@@ -37,5 +37,10 @@ class AdminController extends Controller
         return view('admin.admin_forms.teacherupdateform', compact('user'));
     }
 
+    public function  showcourseform(){
+        $user = auth()->user();
+        return view('admin.admin_forms.coursesform', compact('user'));
+    }
+
 
 }

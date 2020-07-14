@@ -15,14 +15,14 @@
                         <div class="col-sm-10 col-8">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>Teachers Page Information</h5>
+                                    <h5>Create Courses</h5>
                                 </div>
                                 <div class="card-body">
                                     <form action="/courseform/create" method="post" class="theme-form mega-form" enctype="multipart/form-data">
                                         @csrf
 
                                         <div class="form-group row">
-                                            <label for="teachername" class="col-md-2 col-form-label text-md-right">{{ __('Name') }}</label>
+                                            <label for="coursename" class="col-md-2 col-form-label text-md-right">{{ __('Name') }}</label>
 
 
                                             <div class="col-md-8">

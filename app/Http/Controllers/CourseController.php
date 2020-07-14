@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 class CourseController extends Controller
 {
 
-    public function index(){
-        return view('coursesform');
-    }
+
     public function create()
     {
 
