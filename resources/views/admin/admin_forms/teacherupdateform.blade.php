@@ -107,8 +107,9 @@
 
 
                                         <div class="card-footer">
-                                            <button class="btn btn-primary btn-pill">Submit</button>
-                                            <button onclick="return confirm('are you sure ?')" class="btn btn-secondary btn-pill">Cancel</button>
+                                            <button onclick="return confirm('are you sure you want to Submit ?')" class="btn btn-primary btn-pill">Submit</button>
+                                            <span>|--|</span>
+                                            <button href="#" onclick="return confirm('are you sure you want to delete ?')" class="btn btn-secondary btn-pill">Delete Teacher</button>
                                         </div>
                                     </form>
 

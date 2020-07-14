@@ -231,8 +231,8 @@
 
 
                                         <div class="card-footer">
-                                            <button class="btn btn-primary btn-pill">Submit</button>
-                                            <button class="btn btn-secondary btn-pill">Cancel</button>
+                                            <button onclick="return confirm('are you sure you want to Submit ?')" class="btn btn-primary btn-pill">Submit</button>
+                                            <button href="#" class="btn btn-secondary btn-pill">Cancel</button>
                                         </div>
                                     </form>
 
