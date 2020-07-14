@@ -28,6 +28,10 @@ class AdminController extends Controller
         $user = auth()->user();
         return view('admin.admin_forms.classesform', compact('user'));
     }
+    public function  showteacherform(){
+        $user = auth()->user();
+        return view('admin.admin_forms.teacherform', compact('user'));
+    }
 
 
 }
