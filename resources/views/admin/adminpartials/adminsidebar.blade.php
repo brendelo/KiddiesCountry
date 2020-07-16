@@ -10,7 +10,7 @@
                     <li><a href="indexform">Index</a></li>
                     <li><a href="aboutform">About</a></li>
                     <li><a href="classesform">Classes</a></li>
-                    <li><a href="classesform">Courses</a></li>
+                    <li><a href="coursesupdateform">Courses</a></li>
                     <li><a href="teacherupdateform">Teachers</a></li>
                     <li><a href="contactform">Contact Us</a></li>
 
