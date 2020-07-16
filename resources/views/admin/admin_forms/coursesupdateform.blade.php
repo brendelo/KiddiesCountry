@@ -18,19 +18,19 @@
                                     <h5>Teachers Information Update Page</h5>
                                 </div>
 
-                                @foreach($user->teachers as $teacher )
+                                @foreach($user->courses as $course )
                                 <div class="card-body">
-                                    <form action="/teachersupdateform/update/{{$teacher->id}}" method="post" class="theme-form mega-form" enctype="multipart/form-data">
+                                    <form action="/coursesupdateform/update/{{$course->id}}" method="post" class="theme-form mega-form" enctype="multipart/form-data">
                                         @csrf
 
                                         <div class="form-group row">
-                                            <label for="teachername" class="col-md-2 col-form-label text-md-right">{{ __('Name') }}</label>
+                                            <label for="coursename" class="col-md-2 col-form-label text-md-right">{{ __('Name') }}</label>
 
 
                                             <div class="col-md-8">
-                                                <input id="teachername" type="text" class="form-control @error('teachername') is-invalid @enderror" name="teachername" value="{{ old('teachername') ?? $teacher->teachername}}" required autocomplete="teachername" autofocus>
+                                                <input id="coursename" type="text" class="form-control @error('coursename') is-invalid @enderror" name="coursename" value="{{ old('coursename') ?? $course->coursename}}" required autocomplete="coursename" autofocus>
 
-                                                @error('teachername')
+                                                @error('coursename')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
@@ -38,29 +38,16 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
-                                            <label for="teachercourse" class="col-md-2 col-form-label text-md-right">{{ __('Course') }}</label>
 
+
+
+                                        <div class="form-group row">
+                                            <label for="coursedescription" class="col-md-2 col-form-label text-md-right">{{ __('Description') }}</label>
 
                                             <div class="col-md-8">
-                                                <input id="teachercourse" type="text" class="form-control @error('teachercourse') is-invalid @enderror" name="teachercourse" value="{{ old('teachercourse') ?? $teacher->teachercourse}}" autocomplete="teachercourse" autofocus>
+                                                <textarea id="coursedescription" type="text" class="form-control @error('coursedescription') is-invalid @enderror" name="coursedescription" value="{{ old('coursedescription') }}" required autocomplete="coursedescription" autofocus> {{$course->coursedescription ?? ''}}</textarea>
 
-                                                @error('teachercourse')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label for="teacherclass" class="col-md-2 col-form-label text-md-right">{{ __('Class') }}</label>
-
-
-                                            <div class="col-md-8">
-                                                <input id="teacherclass" type="text" class="form-control @error('teacherclass') is-invalid @enderror" name="teacherclass" value="{{ old('teacherclass') ?? $teacher->teacherclass}}" autocomplete="teacherclass" autofocus>
-
-                                                @error('teacherclass')
+                                                @error('coursedescription')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
@@ -69,36 +56,7 @@
                                         </div>
 
 
-                                        <div class="form-group row">
-                                            <label for="teachersummary" class="col-md-2 col-form-label text-md-right">{{ __('Summary') }}</label>
 
-                                            <div class="col-md-8">
-                                                <textarea id="teachersummary" type="text" class="form-control @error('teachersummary') is-invalid @enderror" name="teachersummary" value="{{ old('teachersummary') }}" required autocomplete="teachersummary" autofocus> {{$teacher->teachersummary ?? ''}}</textarea>
-
-                                                @error('teachersummary')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group row">
-                                            <label for="teacherimage" class="col-md-2 col-form-label text-md-right">{{ __('Image') }}</label>
-
-                                            <div class="col-md-8 d-flex">
-
-                                                <img class="w-25" src="storage/{{ $teacher->teacherimage}} " alt="Main Image"/>
-                                                <input id="teacherimage" type="file" class="form-control-file @error('teacherimage') is-invalid @enderror" name="teacherimage" value="{{ old('teacherimage') }}"  autocomplete="teacherimage" autofocus>
-
-                                                @error('teacherimage')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                        </div>
 
 
 
@@ -108,8 +66,6 @@
 
                                         <div class="card-footer">
                                             <button onclick="return confirm('are you sure you want to Submit ?')" class="btn btn-primary btn-pill">Submit</button>
-                                            <span>|--|</span>
-                                            <button href="#" onclick="return confirm('are you sure you want to delete ?')" class="btn btn-secondary btn-pill">Delete Teacher</button>
                                         </div>
                                     </form>
 

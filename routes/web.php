@@ -19,6 +19,7 @@ Route::get('/aboutform', 'AdminController@showaboutform');
 Route::get('/classesform', 'AdminController@showclassesform');
 Route::get('/teachersform', 'AdminController@showteacherform');
 Route::get('/teacherupdateform', 'AdminController@showteacherupdateform');
+Route::get('/coursesupdateform', 'AdminController@showcoursesupdateform');
 Route::get('/coursesform', 'AdminController@showcourseform');
 Route::post('/aboutform/update', 'AboutController@update');
 //Route::post('/indexform/update', 'AdminController@createindexform');
@@ -29,6 +30,7 @@ Route::post('/teachersform/create', 'TeachersController@create');
 Route::post('/coursesform/create', 'CourseController@create');
 
 Route::post('/teachersupdateform/update/{teacherid}', 'TeachersController@update');
+Route::post('/coursesupdateform/update/{courseid}', 'CourseController@update');
 
 
 
