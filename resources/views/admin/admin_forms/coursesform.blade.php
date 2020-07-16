@@ -18,7 +18,7 @@
                                     <h5>Create Courses</h5>
                                 </div>
                                 <div class="card-body">
-                                    <form action="/courseform/create" method="post" class="theme-form mega-form" enctype="multipart/form-data">
+                                    <form action="/coursesform/create" method="post" class="theme-form mega-form" enctype="multipart/form-data">
                                         @csrf
 
                                         <div class="form-group row">
