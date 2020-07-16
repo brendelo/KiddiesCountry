@@ -26,7 +26,7 @@
 
 
                                             <div class="col-md-8">
-                                                <input id="classesheader1" type="text" class="form-control @error('classesheader1') is-invalid @enderror" name="classesheader1" value="{{ old('classesheader1') ?? $user->classes->classesheader1 }}" required autocomplete="header1" autofocus>
+                                                <input id="classesheader1" type="text" class="form-control @error('classesheader1') is-invalid @enderror" name="classesheader1" value="{{ old('classesheader1') ?? $user->classes->classesheader1 }}" required autocomplete="classheader1" autofocus>
 
                                                 @error('classesheader1')
                                                 <span class="invalid-feedback" role="alert">
