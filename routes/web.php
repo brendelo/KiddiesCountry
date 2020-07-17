@@ -22,6 +22,7 @@ Route::get('/teacherupdateform', 'AdminController@showteacherupdateform');
 Route::get('/coursesupdateform', 'AdminController@showcoursesupdateform');
 Route::get('/coursesform', 'AdminController@showcourseform');
 Route::get('/contactform', 'AdminController@showcontactform');
+Route::post('/contactform/update', 'ContactController@update');
 Route::post('/aboutform/update', 'AboutController@update');
 //Route::post('/indexform/update', 'AdminController@createindexform');
 

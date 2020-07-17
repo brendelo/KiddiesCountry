@@ -41,7 +41,7 @@
                                             <label for="contactaddress" class="col-md-2 col-form-label text-md-right">{{ __('Address') }}</label>
 
                                             <div class="col-md-8">
-                                                <textarea id="contactaddress" type="text" class="form-control @error('contactaddress') is-invalid @enderror" name="contactaddress" value="{{ old('contactaddress') ?? $user->contact->contactaddress}}" required autocomplete="contactaddress" autofocus> {{$user->contacts->contactaddress ?? ''}}</textarea>
+                                                <textarea id="contactaddress" type="text" class="form-control @error('contactaddress') is-invalid @enderror" name="contactaddress" value="{{ old('contactaddress') ?? $user->contact->contactaddress}}" required autocomplete="contactaddress" autofocus> {{$user->contact->contactaddress ?? ''}}</textarea>
 
                                                 @error('contactaddress')
                                                 <span class="invalid-feedback" role="alert">
