@@ -21,22 +21,24 @@ class ContactController extends Controller
            'contactheader' => ['required'],
            'contactaddress'=> ['required'],
            'contactimage' => ['image'],
-           'image' => ['image'],
-           'phonenumber' => ['required','numeric']
+            'email' => ['required','email:rfc,dns'],
+           'phonenumber' => ['required','numeric'],
         ]);
 
-        if (\request('image'))
+        if (\request('contactimage'))
         {
-            $imagepath = \request('image')->store('uploads','public');
+            $imagepath = \request('contactimage')->store('uploads','public');
 
             $image = Image::make(public_path('storage/'.$imagepath))->fit(1080,474);
             $image->save();
-            $imagearray = ['image'=>$imagepath];
+            $imagearray = ['contactimage'=>$imagepath];
         }
         $data = array_merge(
             $data,
             $imagearray ?? []
         );
+
+        //dd($data);
 
 
        auth()->user()->contact()->update($data);

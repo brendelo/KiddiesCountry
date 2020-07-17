@@ -21,6 +21,7 @@ class CreateContactsTable extends Migration
             $table->text('contactaddress')->nullable();
             $table->string('image')->nullable();
             $table->string('phonenumber')->nullable();
+            $table->string('email')->nullable();
             $table->timestamps();
 
             $table->index('user_id');
