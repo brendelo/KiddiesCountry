@@ -85,21 +85,21 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
-                                            <label for="image" class="col-md-2 col-form-label text-md-right">{{ __('2nd Image') }}</label>
+{{--                                        <div class="form-group row">--}}
+{{--                                            <label for="image" class="col-md-2 col-form-label text-md-right">{{ __('2nd Image') }}</label>--}}
 
-                                            <div class="col-md-8 d-flex">
+{{--                                            <div class="col-md-8 d-flex">--}}
 
-                                                <img class="w-25" src="storage/{{ $user->contact->image}} " alt="Main Image"/>
-                                                <input id="image" type="file" class="form-control-file @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}"  autocomplete="image" autofocus>
+{{--                                                <img class="w-25" src="storage/{{ $user->contact->image}} " alt="Main Image"/>--}}
+{{--                                                <input id="image" type="file" class="form-control-file @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}"  autocomplete="image" autofocus>--}}
 
-                                                @error('image')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                                @enderror
-                                            </div>
-                                        </div>
+{{--                                                @error('image')--}}
+{{--                                                <span class="invalid-feedback" role="alert">--}}
+{{--                                                    <strong>{{ $message }}</strong>--}}
+{{--                                                </span>--}}
+{{--                                                @enderror--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
 
 
 
