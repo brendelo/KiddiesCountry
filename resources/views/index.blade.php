@@ -20,8 +20,8 @@
                         </div>
                         <div class="tp-caption   tp-resizeme" id="slide-1-layer-3" data-x="right" data-hoffset="60" data-y="281" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                              data-textAlign="['right','right','right','right']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 25px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:PT Serif;">
-                            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse
-                            <br> a pellentesque dui, non felis. Maecenas malesuada elit lectus.
+                            {{ $user->index->intro ?? 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse
+                            <br> a pellentesque dui, non felis. Maecenas malesuada elit lectus.' }}
                         </div>
                         <a class="tp-caption rev-btn  tp-resizeme" href="/about" target="_self" id="slide-1-layer-5" data-x="right" data-hoffset="60" data-y="377" data-width="['auto']" data-height="['auto']" data-type="button" data-actions='' data-responsive_offset="on"
                            data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(208,32,29);bs:solid;bw:0 0 0 0;"}]'
@@ -69,11 +69,10 @@
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix">
                                             <h6 class="themecolor">ABOUT US</h6>
-                                            <h2>History of our school</h2>
+                                            <h2>{{$user->about->aboutheader1 ?? "History of our school"}}</h2>
                                             <hr class="no_line" style="margin:0 auto 10px">
-                                            <h5>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet.</h5>
                                             <p>
-                                                Mauris mollis lobortis turpis, eget accumsan ante aliquam quis. Nam ullamcorper rhoncus sem vitae tempus mattis porta enim. Duis fermentum faucibus est, sed vehicula velit sodales vitae.
+                                                {{$user->about->aboutintro1 ?? "Mauris mollis lobortis turpis, eget accumsan ante aliquam quis. Nam ullamcorper rhoncus sem vitae tempus mattis porta enim. Duis fermentum faucibus est, sed vehicula velit sodales vitae."}}
                                             </p>
                                             <hr class="no_line" style="margin:0 auto 10px">
                                             <a class="button button_right button_size_2 button_theme button_js" href="/teachers"><span class="button_icon"><i class="icon-right-open"></i></span><span class="button_label">Our teachers</span></a>
@@ -86,7 +85,7 @@
                                     <div class="column mcb-column one column_image">
                                         <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
                                             <div class="image_wrapper">
-                                                <img class="scale-with-grid" src="images/home_school2_pic1.jpg">
+                                                <img class="scale-with-grid" src="{{'storage/'. $user->about->aboutsideimage ?? "images/home_school2_pic1.jpg" }}">
                                             </div>
                                         </div>
                                     </div>
@@ -96,61 +95,35 @@
                     </div>
                     <div class="section mcb-section equal-height-wrap" style="padding-top:0px; padding-bottom:120px">
                         <div class="section_wrapper mcb-section-inner">
-                            <div class="wrap mcb-wrap one-fourth valign-top clearfix" style="padding:40px 40px 420px; background-image:url(images/home_school2_pic2.jpg); background-repeat:no-repeat; background-position:center bottom">
+                            <div class="wrap mcb-wrap one-fourth valign-top clearfix" style="padding:40px 40px 420px; background-image:url({{"storage/".$user->index->lessonimage ?? "images/home_school2_pic2.jpg"}} ); background-repeat:no-repeat; background-position:center bottom">
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix">
-                                            <h2 style="color:#fff">Lessons</h2>
-                                            <h5 style="color:#fff">Our teachers develop children's skills.</h5>
+                                            <h2 style="color:#fff">{{ $user->index->lessonheader ?? "Lessons"}}</h2>
+                                            <h5 style="color:#fff">{{$user->index->lessontext ?? "Our teachers develop children's skills."}}</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="wrap mcb-wrap three-fourth  column-margin-0px valign-top clearfix" style="padding:40px 40px 25px; background-color:#fafafa">
                                 <div class="mcb-wrap-inner">
+
+                                    @foreach($user->courses as $course)
                                     <div class="column mcb-column one-second column_column">
                                         <div class="column_attr clearfix" style=" background-image:url('{{ asset('images/home_school2_pic4.png') }}'); background-repeat:no-repeat; background-position:left center; padding:45px 0 45px 70px; border-bottom: 1px solid #ededed;">
-                                            <h4 style="margin: 0;">Sport lessons</h4>
+                                            <h4 style="margin: 0;">{{$course->coursename ?? "Sample"}} lessons</h4>
                                         </div>
                                     </div>
-                                    <div class="column mcb-column one-second column_column">
-                                        <div class="column_attr clearfix" style=" background-image:url('{{ asset('images/home_school2_pic5.png') }}'); background-repeat:no-repeat; background-position:left center; padding:45px 0 45px 70px; border-bottom: 1px solid #ededed;">
-                                            <h4 style="margin: 0;">Drawing lessons</h4>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column one column_divider ">
-                                        <hr class="no_line">
-                                    </div>
-                                    <div class="column mcb-column one-second column_column">
-                                        <div class="column_attr clearfix" style=" background-image:url('{{ asset('images/home_school2_pic6.png') }}'); background-repeat:no-repeat; background-position:left center; padding:45px 0 45px 70px; border-bottom: 1px solid #ededed;">
-                                            <h4 style="margin: 0;">Music lessons</h4>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column one-second column_column">
-                                        <div class="column_attr clearfix" style=" background-image:url('{{ asset('images/home_school2_pic7.png') }}'); background-repeat:no-repeat; background-position:left center; padding:45px 0 45px 70px; border-bottom: 1px solid #ededed;">
-                                            <h4 style="margin: 0;">History lessons</h4>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column one column_divider ">
-                                        <hr class="no_line">
-                                    </div>
-                                    <div class="column mcb-column one-second column_column">
-                                        <div class="column_attr clearfix" style=" background-image:url('{{ asset('images/home_school2_pic8.png') }}'); background-repeat:no-repeat; background-position:left center; padding:45px 0 45px 70px; border-bottom: 1px solid #ededed;">
-                                            <h4 style="margin: 0;">Nature lessons</h4>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column one-second column_column">
-                                        <div class="column_attr clearfix" style=" background-image:url('{{ asset('images/home_school2_pic9.png') }}'); background-repeat:no-repeat; background-position:left center; padding:45px 0 45px 70px; border-bottom: 1px solid #ededed;">
-                                            <h4 style="margin: 0;">Math lessons</h4>
-                                        </div>
-                                    </div>
+
+                                    @endforeach
+
                                     <div class="column mcb-column one column_divider ">
                                         <hr class="no_line" style="margin:0 auto 30px">
                                     </div>
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix">
                                             <p>
-                                                Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere. Nunc urna libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend, scelerisque eros ut, pellentesque nibh. Nam lacinia suscipit accumsan.
+                                                {{$user->index->lessonsummary ?? "Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere. Nunc urna libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend, scelerisque eros ut, pellentesque nibh. Nam lacinia suscipit accumsan."}}
                                             </p>
                                             <a class="button button_right button_size_2 button_theme button_js" href="/classes"><span class="button_icon"><i class="icon-right-open"></i></span><span class="button_label">Learn more</span></a>
                                         </div>
