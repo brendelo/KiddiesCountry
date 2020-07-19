@@ -34,6 +34,8 @@
                         <div class="section_wrapper mcb-section-inner">
                             <div class="wrap mcb-wrap one valign-top clearfix">
                                 <div class="mcb-wrap-inner">
+
+
                                     <div class="column mcb-column one-third column_column">
                                         <div class="column_attr clearfix">
                                             <h6 class="themecolor">ETIAM ULLAMCORPER</h6>
@@ -52,75 +54,8 @@
                                     <div class="column mcb-column one column_divider ">
                                         <hr class="no_line">
                                     </div>
-                                    <div class="column mcb-column one-third column_column">
-                                        <div class="column_attr clearfix">
-                                            <h6 class="themecolor">TURPIS VIVERRA</h6>
-                                            <h2>History</h2>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column two-third column_column">
-                                        <div class="column_attr clearfix" style=" padding:0 0 25px; border-bottom: 1px solid #000;">
-                                            <p>
-                                                commodo volutpat, convallis ac, laoreet enim, phasellus, fermentum in, dolor, pellentesque facilisis, nulla, imperdiet sit, amet magna
-                                            </p>
-                                            <hr class="no_line" style="margin:0 auto 10px">
-                                            <a class="button button_right button_size_2 button_theme button_js" href="#"><span class="button_icon"><i class="icon-right-open"></i></span><span class="button_label">Learn more</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column one column_divider ">
-                                        <hr class="no_line">
-                                    </div>
-                                    <div class="column mcb-column one-third column_column">
-                                        <div class="column_attr clearfix">
-                                            <h6 class="themecolor">IN QUAM ENIM</h6>
-                                            <h2>Music</h2>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column two-third column_column">
-                                        <div class="column_attr clearfix" style=" padding:0 0 25px; border-bottom: 1px solid #000;">
-                                            <p>
-                                                commodo volutpat, convallis ac, laoreet enim, phasellus, fermentum in, dolor, pellentesque facilisis, nulla, imperdiet sit, amet magna
-                                            </p>
-                                            <hr class="no_line" style="margin:0 auto 10px">
-                                            <a class="button button_right button_size_2 button_theme button_js" href="#"><span class="button_icon"><i class="icon-right-open"></i></span><span class="button_label">Learn more</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column one column_divider ">
-                                        <hr class="no_line">
-                                    </div>
-                                    <div class="column mcb-column one-third column_column">
-                                        <div class="column_attr clearfix">
-                                            <h6 class="themecolor">IMPERDIET</h6>
-                                            <h2>Sport</h2>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column two-third column_column">
-                                        <div class="column_attr clearfix" style=" padding:0 0 25px; border-bottom: 1px solid #000;">
-                                            <p>
-                                                commodo volutpat, convallis ac, laoreet enim, phasellus, fermentum in, dolor, pellentesque facilisis, nulla, imperdiet sit, amet magna
-                                            </p>
-                                            <hr class="no_line" style="margin:0 auto 10px">
-                                            <a class="button button_right button_size_2 button_theme button_js" href="#"><span class="button_icon"><i class="icon-right-open"></i></span><span class="button_label">Learn more</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column one column_divider ">
-                                        <hr class="no_line">
-                                    </div>
-                                    <div class="column mcb-column one-third column_column">
-                                        <div class="column_attr clearfix">
-                                            <h6 class="themecolor">VESTIBULUM VEL</h6>
-                                            <h2>English</h2>
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column two-third column_column">
-                                        <div class="column_attr clearfix" style=" padding:0 0 25px; border-bottom: 1px solid #000;">
-                                            <p>
-                                                commodo volutpat, convallis ac, laoreet enim, phasellus, fermentum in, dolor, pellentesque facilisis, nulla, imperdiet sit, amet magna
-                                            </p>
-                                            <hr class="no_line" style="margin:0 auto 10px">
-                                            <a class="button button_right button_size_2 button_theme button_js" href="#"><span class="button_icon"><i class="icon-right-open"></i></span><span class="button_label">Learn more</span></a>
-                                        </div>
-                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
