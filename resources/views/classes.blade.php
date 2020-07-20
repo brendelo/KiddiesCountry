@@ -40,7 +40,7 @@
 
                                     <div class="column mcb-column one-third column_column">
                                         <div class="column_attr clearfix">
-                                            <h6 class="themecolor">ETIAM ULLAMCORPER</h6>
+                                            <h6 class="themecolor">Building Our Future Through</h6>
                                             <h2>{{$course->coursename ?? "Math"}}</h2>
                                         </div>
                                     </div>
@@ -70,23 +70,25 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one-second column_column">
                                         <div class="column_attr clearfix" style=" padding:0 7% 0 0;">
-                                            <h6 class="themecolor">ETIAM ULLAMCORPER</h6>
-                                            <h2>Lorem ipsum sit</h2>
+                                            <h6 class="themecolor"> </h6>
+                                            <h2>{{ $user->classes->classesheader1 ?? "Lorem ipsum sit"}}</h2>
                                             <hr class="no_line" style="margin:0 auto 10px">
-                                            <h5>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet.</h5>
                                             <p>
-                                                Mauris mollis lobortis turpis, eget accumsan ante aliquam quis. Nam ullamcorper rhoncus sem vitae tempus mattis porta enim. Duis fermentum faucibus est, sed vehicula velit sodales vitae.
+                                                {{ $user->classes->classesintro1 ?? "Mauris mollis lobortis turpis, eget accumsan ante aliquam quis. Nam
+                                                ullamcorper rhoncus sem vitae tempus mattis porta enim. Duis fermentum
+                                                faucibus est, sed vehicula velit sodales"}}
                                             </p>
                                         </div>
                                     </div>
                                     <div class="column mcb-column one-second column_column">
                                         <div class="column_attr clearfix" style=" padding:0 7% 0 0;">
-                                            <h6 class="themecolor">QUISQUE LOREM</h6>
-                                            <h2>Integer aliquam</h2>
+                                            <h6 class="themecolor"> </h6>
+                                            <h2>{{ $user->classes->classesheader2 ?? "Integer aliquam"}}</h2>
                                             <hr class="no_line" style="margin:0 auto 10px">
-                                            <h5>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet.</h5>
                                             <p>
-                                                Mauris mollis lobortis turpis, eget accumsan ante aliquam quis. Nam ullamcorper rhoncus sem vitae tempus mattis porta enim. Duis fermentum faucibus est, sed vehicula velit sodales vitae.
+                                                {{ $user->classes->classesintro2 ?? "Mauris mollis lobortis turpis, eget accumsan ante aliquam quis. Nam
+                                                ullamcorper rhoncus sem vitae tempus mattis porta enim. Duis fermentum
+                                                faucibus est, sed vehicula velit sodales vitae."}}
                                             </p>
                                         </div>
                                     </div>
