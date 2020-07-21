@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
 class TeachersController extends Controller
 {
     public function index(){
-        return view('teachers');
+        $user = 1;
+        $user = User::findorFail($user);
+        return view('teachers', compact('user'));
     }
 
     public function create()
