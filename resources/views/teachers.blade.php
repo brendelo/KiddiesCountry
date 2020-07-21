@@ -25,19 +25,20 @@
                                     <div class="column mcb-column one column_image">
                                         <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
                                             <div class="image_wrapper">
-                                                <img class="scale-with-grid" src="{{"images/home_school2_pic17.jpg"}}">
+                                                <img class="scale-with-grid" src="{{"storage/".$teacher->teacherimage ?? "images/home_school2_pic17.jpg"}}">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix" style=" padding:0 10% 0 0;">
-                                            <h2>Igy
-                                                <br> Adams
+                                            <h2>{{$teacher->teachername ?? "Igy
+                                                <br> Adams"}}
                                             </h2>
-                                            <h6 class="themecolor">ENGLISH</h6>
-                                            <h5>Ut ultricies imperdiet sodales. Aliquam fringilla aliquam.</h5>
+                                            <h6 class="themecolor">{{strtoupper($teacher->teachercourse) ?? "ENGLISH"}}</h6>
+
                                             <p>
-                                                Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante.
+                                                {{$teacher->teachersummary ?? "Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae
+                                                molestie ante."}}
                                             </p>
                                         </div>
                                     </div>
