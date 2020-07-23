@@ -35,9 +35,11 @@ class ClassesController extends Controller
             $imagepath = \request('classesmainimage')->store('uploads','public');
             $image = Image::make(public_path('storage/'.$imagepath))->fit(1080,467);
             $image->save();
+
+            $imagearray = ['classesmainimage' => $imagepath];
         }
 
-        $imagearray = ['classesmainimage' => $imagepath];
+
 
         auth()->user()->classes()->update(array_merge(
             $data,
