@@ -22,7 +22,7 @@
                                     <div class="column mcb-column one column_image">
                                         <div class="image_frame image_item no_link scale-with-grid no_border">
                                             <div class="image_wrapper">
-                                                <img class="scale-with-grid" src="images/home_school2_pic16.jpg">
+                                                <img class="scale-with-grid" src="{{"storage/".$user->classes->classesmainimage ?? "images/home_school2_pic16.jpg"}}">
                                             </div>
                                         </div>
                                     </div>
