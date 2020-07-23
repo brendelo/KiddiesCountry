@@ -22,7 +22,7 @@
                                     <div class="column mcb-column one column_image">
                                         <div class="image_frame image_item no_link scale-with-grid no_border">
                                             <div class="image_wrapper">
-                                                <img class="scale-with-grid" src="images/home_school2_pic25.jpg">
+                                                <img class="scale-with-grid" src="{{"storage/" .$user->contact->contactimage ?? "images/home_school2_pic25.jpg"}}">
                                             </div>
                                         </div>
                                     </div>
@@ -37,20 +37,21 @@
                                     <div class="column mcb-column one-third column_column">
                                         <div class="column_attr clearfix" style=" padding:0 7% 0 0;">
                                             <h6 class="themecolor">PROIN RISUS</h6>
-                                            <h2>Be School</h2>
+                                            <h2>{{$user->contact->contactheader ?? "Be School"}}</h2>
                                             <hr class="no_line" style="margin:0 auto 10px">
-                                            <h5>Level 13, 2 Elizabeth St,
+                                            <h5>{{ $user->contact->contactaddress ?? "Level 13, 2 Elizabeth St,
                                                 <br> Melbourne, Victoria 3000,
-                                                <br> Australia
+                                                <br> Australia"}}
                                             </h5>
                                             <p>
-                                                <a href="#">noreply@envato.com</a>
-                                                <br> +61 (0) 3 8376 6284
+                                                <a href="#">{{$user->contact->email ?? "noreply@envato.com"}}</a>
+                                                <br> {{"+234 ".$user->contact->phonenumber ?? "+61 (0) 3 8376 6284"}}
                                             </p>
                                         </div>
                                     </div>
                                     <div class="column mcb-column two-third column_map_basic">
-                                        <iframe class="embed" width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDxyJtV5FcRFAXuGOvx8Mp35WBb_phYRUg&amp;q=Envato++121+King+St++Melbourne+VIC+3000++Australia&amp;zoom=13" allowfullscreen></iframe>
+{{--                                        <iframe class="embed" width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDxyJtV5FcRFAXuGOvx8Mp35WBb_phYRUg&amp;q=Envato++121+King+St++Melbourne+VIC+3000++Australia&amp;zoom=13" allowfullscreen></iframe>--}}
+                                        <iframe class="embed" width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.74890756359!2d3.3798643154121124!3d6.553351324632148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d76ffa95f93%3A0xd45b465385f73f33!2sKiddies%20Country%20School!5e0!3m2!1sen!2sus!4v1595476507851!5m2!1sen!2sus" style="border:0;" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
                                     </div>
                                 </div>
                             </div>
