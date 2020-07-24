@@ -3,7 +3,7 @@
         <div class="container">
             <div class="column one-fourth">
                 <aside class="widget_text widget widget_custom_html">
-                    <h4>Cras faucibus</h4>
+                    <h4>KINDNESS</h4>
                     <div class="textwidget custom-html-widget">
                         <ul>
                             <li style="margin-bottom:10px">
@@ -27,7 +27,7 @@
             </div>
             <div class="column one-fourth">
                 <aside class="widget_text widget widget_custom_html">
-                    <h4>Aliquam orci</h4>
+                    <h4>HUMILITY</h4>
                     <div class="textwidget custom-html-widget">
                         <ul>
                             <li style="margin-bottom:10px">
@@ -51,7 +51,7 @@
             </div>
             <div class="column one-fourth">
                 <aside class="widget_text widget widget_custom_html">
-                    <h4>Nulla imperdiet</h4>
+                    <h4>DILIGENCE</h4>
                     <div class="textwidget custom-html-widget">
                         <ul>
                             <li style="margin-bottom:10px">
@@ -75,15 +75,15 @@
             </div>
             <div class="column one-fourth">
                 <aside class="widget_text widget widget_custom_html">
-                    <h4>Be School</h4>
+                    <h4>{{$user->contact->contactheader ?? "Kiddies Country School"}}</h4>
                     <div class="textwidget custom-html-widget">
                         <p>
-                            Level 13, 2 Elizabeth St,
-                            <br> Melbourne, Victoria 3000
+                            {{ $user->contact->contactaddress ?? "Level 13, 2 Elizabeth St,
+                            <br> Melbourne, Victoria 3000"}}
                         </p>
                         <p>
-                            <a style="color: #f94203;" href="#">noreply@envato.com</a>
-                            <br> +61 (0) 3 8376 6284
+                            <a style="color: #f94203;" href="#">{{$user->contact->email}}</a>
+                            <br> {{ "+234 ". $user->contact->phonenumber ?? "+61 (0) 3 8376 6284"}}
                         </p>
                     </div>
                 </aside>
