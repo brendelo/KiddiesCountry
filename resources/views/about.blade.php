@@ -155,24 +155,7 @@
                                             &nbsp;
                                         </div>
                                     </div>
-                                    <div class="column mcb-column one-second column_column">
-                                        <div class="column_attr clearfix align_center">
-                                            <h2 style="color:#fff">Sign up for our school</h2>
-                                            <hr class="no_line" style="margin:0 auto 10px">
-                                            <p style="color:#fff">
-                                                Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel. Maximus justo. Maecenas mi tortor, pellentesque a aliquam ut.
-                                            </p>
-                                            <hr class="no_line" style="margin:0 auto 30px">
-                                            <div class="school2-newsletter">
-                                                <div id="mc4wp-form-1" class="form mc4wp-form">
-                                                    <form id="newsletterform" class="newsletter_form">
-                                                        <input placeholder="Your e-mail" type="email" id="email_news" name="email_news" size="40" aria-required="true" aria-invalid="false" />
-                                                        <input type="button" value="SUBSCRIBE" id="submit" onClick="return check_values_news();">
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
