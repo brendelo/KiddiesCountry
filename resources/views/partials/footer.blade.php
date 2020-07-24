@@ -6,21 +6,21 @@
                     <h4>KINDNESS</h4>
                     <div class="textwidget custom-html-widget">
                         <ul>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Lorem ipsum</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Praesent pretium</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Pellentesque</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Aliquam</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Lorem ipsum</a>
-                            </li>
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Lorem ipsum</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Praesent pretium</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Pellentesque</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Aliquam</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Lorem ipsum</a>--}}
+{{--                            </li>--}}
                         </ul>
                     </div>
                 </aside>
@@ -30,21 +30,21 @@
                     <h4>HUMILITY</h4>
                     <div class="textwidget custom-html-widget">
                         <ul>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Etiam dapibus</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Nunc sit</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Etiam tempor</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Lorem ipsum</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Nunc sit</a>
-                            </li>
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Etiam dapibus</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Nunc sit</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Etiam tempor</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Lorem ipsum</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Nunc sit</a>--}}
+{{--                            </li>--}}
                         </ul>
                     </div>
                 </aside>
@@ -54,21 +54,21 @@
                     <h4>DILIGENCE</h4>
                     <div class="textwidget custom-html-widget">
                         <ul>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Praesent pretium</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Pellentesque</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Aliquam</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Etiam dapibus</a>
-                            </li>
-                            <li style="margin-bottom:10px">
-                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Aliquam</a>
-                            </li>
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Praesent pretium</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Pellentesque</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Aliquam</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Etiam dapibus</a>--}}
+{{--                            </li>--}}
+{{--                            <li style="margin-bottom:10px">--}}
+{{--                                <span style="color:#fcb927;margin-right:10px">→</span><a href="#">Aliquam</a>--}}
+{{--                            </li>--}}
                         </ul>
                     </div>
                 </aside>
