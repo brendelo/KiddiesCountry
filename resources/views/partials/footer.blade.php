@@ -95,7 +95,7 @@
             <div class="column one">
                 <a id="back_to_top" class="button button_js" href="#"><i class="icon-up-open-big"></i></a>
                 <div class="copyright">
-                    &copy; 2020 Kiddies Country School  -  by <a target="_blank" rel="nofollow" href="http://bit.ly/1M6lijQ">Brendelo Inc</a>
+                    &copy; 2020 Kiddies Country School  -  by <a target="_blank" rel="nofollow" href="http://bit.ly/1M6lijQ"> Brendelo Inc</a>
                 </div>
             </div>
         </div>
